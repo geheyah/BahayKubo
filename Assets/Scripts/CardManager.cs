@@ -1,37 +1,45 @@
 using System;
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.Serialization;
+using TMPro;
+
 
 public class CardManager : MonoBehaviour
 {
-    public Transform card;
-    public Transform originalPos;
-    void Start()
+    private Transform currentPos;
+    public int veggieID;
+
+    private void Awake()
     {
-        card.position = originalPos.position;
+        currentPos.position = this.transform.position;
     }
 
+    void Start()
+    {
+        
+        veggieID = UnityEngine.Random.Range(0, 2);
+        // 0=Upo,1=Kalabasa,2=Talong   
+    }
+
+    void Update()
+    {
+        if (veggieID == 0){this.name = "upo";}
+        if (veggieID == 1){this.name = "kalabasa";}
+        if (veggieID == 2){this.name = "talong";}
+
+    }
+    
     public void OnMouseDrag()
     {
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = Camera.main.nearClipPlane; 
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        card.DOMove(worldPosition, 0.1f);
+        this.transform.DOMove(worldPosition, 0.1f);
     }
 
     public void OnMouseUp()
     {
-        card.DOMove(originalPos.position, 0.3f);
-    }
-    
-    public void OnMouseEnter()
-    {
-        
-    }
-    public void OnMouseExit()
-    {
-        
+        this.transform.DOMove(currentPos.position, 0.3f);
     }
     
 }

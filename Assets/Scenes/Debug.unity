@@ -198,68 +198,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &90447357
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 90447358}
-  m_Layer: 0
-  m_Name: CardPositionTalong
-  m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &90447358
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90447357}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: -2.48, z: 0.02875591}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &212908223
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 212908224}
-  m_Layer: 0
-  m_Name: CardPositionKalabasa
-  m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &212908224
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212908223}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.31, y: -2.44, z: 0.02875591}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216679574
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +214,7 @@ GameObject:
   m_Layer: 0
   m_Name: sampleUpoCard
   m_TagString: Upo
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -347,7 +285,7 @@ Transform:
   m_GameObject: {fileID: 216679574}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.03, y: -8.82, z: 0}
+  m_LocalPosition: {x: -7.26, y: -3.34, z: 0}
   m_LocalScale: {x: 1.5, y: 2, z: 0.54922}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -365,8 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14f52bdaef7a4e05bb70fe70f7c8182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 216679576}
-  originalPos: {fileID: 1719291767}
+  veggieID: 0
 --- !u!61 &216679579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -456,7 +393,7 @@ GameObject:
   m_Layer: 0
   m_Name: sampleKalabasaCard
   m_TagString: Kalabasa
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -472,8 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14f52bdaef7a4e05bb70fe70f7c8182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 296605948}
-  originalPos: {fileID: 212908224}
+  veggieID: 0
 --- !u!212 &296605947
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -541,7 +477,7 @@ Transform:
   m_GameObject: {fileID: 296605944}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.73, y: -8.85, z: 0}
+  m_LocalPosition: {x: -5.03, y: -3.32, z: 0}
   m_LocalScale: {x: 1.5, y: 2, z: 0.54922}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -977,6 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlantBoxManager
   plantCounter: {fileID: 1482970911}
+  cardManager: {fileID: 0}
   upoCount: 0
   kalabasaCount: 0
   talongCount: 0
@@ -1523,7 +1460,7 @@ GameObject:
   m_Layer: 0
   m_Name: sampleTalongCard
   m_TagString: Talong
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1539,8 +1476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14f52bdaef7a4e05bb70fe70f7c8182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 1518023604}
-  originalPos: {fileID: 90447358}
+  veggieID: 0
 --- !u!212 &1518023603
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1608,7 +1544,7 @@ Transform:
   m_GameObject: {fileID: 1518023600}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9, y: -8.84, z: 0}
+  m_LocalPosition: {x: -3, y: -3.34, z: 0}
   m_LocalScale: {x: 1.5, y: 2, z: 0.54922}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1687,37 +1623,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1719291766
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1719291767}
-  m_Layer: 0
-  m_Name: CardPositionUpo
-  m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1719291767
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719291766}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: -2.44, z: 0.02875591}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1880271812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,8 +1754,5 @@ SceneRoots:
   - {fileID: 216679576}
   - {fileID: 296605948}
   - {fileID: 1518023604}
-  - {fileID: 1719291767}
-  - {fileID: 212908224}
-  - {fileID: 90447358}
   - {fileID: 428742283}
   - {fileID: 52779746}

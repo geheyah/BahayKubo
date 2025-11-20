@@ -7,34 +7,26 @@ using UnityEngine.UI;
 public class PlantBoxManager : MonoBehaviour
 {
     public TMP_Text plantCounter;
+    public CardManager cardManager;
     public int upoCount, kalabasaCount, talongCount;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         plantCounter.text = "Planted Vegetables:" + "\n Upo:" + upoCount.ToString() + "\n Kalabasa:" + kalabasaCount.ToString() + "\n Talong" + talongCount.ToString();
     }
-    
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Upo"))
+        if (other.name == "upo")
         {
             upoCount++;
             other.gameObject.SetActive(false);
         }
-        else if (other.CompareTag("Kalabasa"))
+        else if (other.name == "kalabasa")
         {
             kalabasaCount++;
             other.gameObject.SetActive(false);
 
         }
-        else if (other.CompareTag("Talong"))
+        else if (other.name == "talong")
         {
             talongCount++;
             other.gameObject.SetActive(false);
