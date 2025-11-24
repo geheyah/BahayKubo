@@ -12,7 +12,7 @@ public class CardManager : MonoBehaviour
     void Start()
     {
         this.transform.position = currentPos.position;
-        veggieID = UnityEngine.Random.Range(0, 2);
+        veggieID = UnityEngine.Random.Range(0, 3);
         // 0=Upo,1=Kalabasa,2=Talong   
     }
 

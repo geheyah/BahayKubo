@@ -10,9 +10,7 @@ public class TurnEventManager : MonoBehaviour
     public Button turnend;
     public TMP_Text turncount;
     public GameObject[] cards;
-    public GameObject plantbox;
     
-   
     void Start()
     {
         cards = GameObject.FindGameObjectsWithTag("Card");
@@ -22,8 +20,9 @@ public class TurnEventManager : MonoBehaviour
     void EndTurn()
     {
         currentturn++;
-        foreach (var card
-            card.SetActive(true);
+        foreach (var card in cards)
+        {
+          card.SetActive(true);
         }
         
     }
