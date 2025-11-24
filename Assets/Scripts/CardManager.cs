@@ -8,6 +8,8 @@ public class CardManager : MonoBehaviour
 {
     public Transform currentPos;
     public int veggieID;
+    public SpriteRenderer cardSprite;
+    public Sprite uposprite,kalabasasprite,talongsprite;
     
     void Start()
     {
@@ -18,9 +20,23 @@ public class CardManager : MonoBehaviour
 
     void Update()
     {
-        if (veggieID == 0){this.name = "upo";}
-        if (veggieID == 1){this.name = "kalabasa";}
-        if (veggieID == 2){this.name = "talong";}
+        if (veggieID == 0)
+        {
+            this.name = "upo";
+            cardSprite.sprite = uposprite;
+        }
+
+        if (veggieID == 1)
+        {
+            this.name = "kalabasa";
+            cardSprite.sprite = kalabasasprite;
+        }
+
+        if (veggieID == 2)
+        {
+            this.name = "talong";
+            cardSprite.sprite = talongsprite;
+        }
 
     }
     

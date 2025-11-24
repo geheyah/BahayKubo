@@ -11,7 +11,7 @@ public class PlantBoxManager : MonoBehaviour
     public int upoCount, kalabasaCount, talongCount;
     void Update()
     {
-        plantCounter.text = "Planted Vegetables:" + "\n Upo:" + upoCount.ToString() + "\n Kalabasa:" + kalabasaCount.ToString() + "\n Talong" + talongCount.ToString();
+        plantCounter.text = "Tanim ni Manong" + "\n Upo:" + upoCount.ToString() + "\n Kalabasa:" + kalabasaCount.ToString() + "\n Talong:" + talongCount.ToString();
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
