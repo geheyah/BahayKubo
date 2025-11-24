@@ -1,16 +1,40 @@
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TurnEventManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public int currentturn = 0;
+    public int maxturn = 30;
+    public Button turnend;
+    public TMP_Text turncount;
+    public GameObject[] cards;
+    public GameObject plantbox;
+    
+   
     void Start()
     {
-        
+        cards = GameObject.FindGameObjectsWithTag("Card");
+        turnend.onClick.AddListener(EndTurn);
     }
 
-    // Update is called once per frame
+    void EndTurn()
+    {
+        currentturn++;
+        foreach (var card
+            card.SetActive(true);
+        }
+        
+    }
+    
     void Update()
     {
+        turncount.text = "Turn:" + currentturn + "/" + maxturn;
         
+        if (currentturn == maxturn)
+        {
+            //tally results
+        }
     }
 }

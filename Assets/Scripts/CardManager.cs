@@ -6,17 +6,12 @@ using TMPro;
 
 public class CardManager : MonoBehaviour
 {
-    private Transform currentPos;
+    public Transform currentPos;
     public int veggieID;
-
-    private void Awake()
-    {
-        currentPos.position = this.transform.position;
-    }
-
+    
     void Start()
     {
-        
+        this.transform.position = currentPos.position;
         veggieID = UnityEngine.Random.Range(0, 2);
         // 0=Upo,1=Kalabasa,2=Talong   
     }
