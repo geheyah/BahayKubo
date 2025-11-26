@@ -22,7 +22,7 @@ public class TurnEventManager : MonoBehaviour
         currentturn++;
         foreach (var card in cards)
         {
-          card.SetActive(true);
+            Time.timeScale = 0f;
         }
         
     }
