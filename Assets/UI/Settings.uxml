@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/baselinebuttons.uss?fileID=7433441132597879392&amp;guid=593059d0125184d3499855239f38270a&amp;type=3#baselinebuttons" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; padding-top: 195px; padding-right: 195px; padding-bottom: 195px; padding-left: 195px;">
+        <ui:Label text="game paused" name="Title" style="align-self: center; font-size: 69px; -unity-font-definition: url(&quot;project://database/Assets/Art/Fonts/ADELIA.otf?fileID=12800000&amp;guid=a19060174d6224f9bb28717124e8d2dd&amp;type=3#ADELIA&quot;); -unity-text-align: middle-center; margin-top: 0; margin-right: 0; margin-bottom: 61px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        <ui:Button text="resume game" name="Resume" class="buttonsettings" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        <ui:Button text="game settings" name="Settings" class="buttonsettings" style="width: 800px; height: 200px; align-self: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        <ui:Button text="main menu" name="Home" class="buttonsettings" style="width: 800px; height: 200px; align-self: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; align-content: auto; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+    </ui:VisualElement>
+</ui:UXML>
