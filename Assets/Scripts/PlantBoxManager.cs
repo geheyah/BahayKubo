@@ -7,11 +7,10 @@ using UnityEngine.UI;
 public class PlantBoxManager : MonoBehaviour
 {
     public TMP_Text plantCounter;
-    public CardManager cardManager;
     public int upoCount, kalabasaCount, talongCount;
     void Update()
     {
-        plantCounter.text = "Tanim ni Manong" + "\n Upo:" + upoCount.ToString() + "\n Kalabasa:" + kalabasaCount.ToString() + "\n Talong:" + talongCount.ToString();
+        plantCounter.text = "Upo=" + upoCount + "\n Kalabasa=" + kalabasaCount + "\n Talong=" + talongCount;
     }
     public void OnTriggerEnter2D(Collider2D other)
     {

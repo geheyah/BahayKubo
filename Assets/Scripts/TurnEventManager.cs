@@ -2,14 +2,17 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class TurnEventManager : MonoBehaviour
 {
     public int currentturn = 0;
     public int maxturn = 30;
     public Button turnend;
+    public TMP_Text turnEndText;
     public TMP_Text turncount;
     public GameObject[] cards;
+    public GameObject truck;
     
     void Start()
     {
@@ -19,11 +22,17 @@ public class TurnEventManager : MonoBehaviour
 
     void EndTurn()
     {
-        currentturn++;
         foreach (var card in cards)
         {
-            Time.timeScale = 0f;
+            truck.transform.DOMove(new Vector3(0f,1.5f,0f), 0.5f);
+            turnEndText.text = "See Profits";
         }
+        
+    }
+
+    void SeeProfits()
+    {
+        
         
     }
     
